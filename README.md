@@ -6,7 +6,7 @@ for your own automation projects.
 
 ## ✨ Features
 
-- **Mark the entrance**: The automation marks the entrance of the user on the
+- **Clock in**: The automation clock in of the user on the
   Factorial HR website by using the cron job.
 
 ## 🔧 Configuration
