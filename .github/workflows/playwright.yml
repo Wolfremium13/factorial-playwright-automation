@@ -1,6 +1,8 @@
-name: Playwright Tests
+name: Playwright Factorial Tests
 
 on:
+  push:
+    branches: [ main, master ]
   schedule:
     - cron: '0 7 * * 1-5' # Ejecuta a las 7 AM UTC de lunes a viernes
 
@@ -18,6 +20,9 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
+      env:
+        FACTORIAL_PASSWORD: ${{ secrets.FACTORIAL_PASSWORD }}
+        FACTORIAL_USER: ${{ secrets.FACTORIAL_USER }}
       run: npx playwright test
     - uses: actions/upload-artifact@v4
       if: always()
