@@ -26,7 +26,7 @@ test.describe("The Factorial page should", () => {
     factorialPage = await SignIn(page);
   });
 
-  test("mark the when I start working", async () => {
+  test("clock in", async () => {
     await expect(
       factorialPage.getByRole("button", { name: "Entrada" })
     ).toBeVisible();
