@@ -1,8 +1,6 @@
 name: Playwright Factorial Tests
 
 on:
-  push:
-    branches: [ main, master ]
   schedule:
     - cron: '0 7 * * 1-5' # Ejecuta a las 7 AM UTC de lunes a viernes
 
