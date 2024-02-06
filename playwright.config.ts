@@ -8,8 +8,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: 'html',
   use: {
-    /* Base URL to use in actions like `await page.goto('/')`. */
-    // baseURL: 'https://api.factorialhr.com/es/users/sign_in',
+    baseURL: 'https://api.factorialhr.com/es/users/sign_in',
     trace: 'on-first-retry',
   },
   projects: [
