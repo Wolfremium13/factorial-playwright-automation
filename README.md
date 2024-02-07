@@ -6,8 +6,10 @@ for your own automation projects.
 
 ## ✨ Features
 
-- **Clock in**: The automation clock in of the user on the
-  Factorial HR website by using the cron job.
+- **Clock in**: The automation clock in of the user on the Factorial HR website
+  by using the cron job at 7 AM.
+- **Clock out**: The automation clock out of the user on the Factorial HR
+  website by using the cron job at 15 PM.
 
 ## 🔧 Configuration
 

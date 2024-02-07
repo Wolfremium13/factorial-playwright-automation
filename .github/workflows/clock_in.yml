@@ -1,4 +1,4 @@
-name: Playwright Factorial Tests
+name: Clock In
 
 on:
   schedule:
@@ -17,11 +17,11 @@ jobs:
       run: npm ci
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
-    - name: Run Playwright tests
+    - name: Run clock in tests
       env:
         FACTORIAL_PASSWORD: ${{ secrets.FACTORIAL_PASSWORD }}
         FACTORIAL_USER: ${{ secrets.FACTORIAL_USER }}
-      run: npx playwright test
+      run: npx playwright test -g "@clockIn"
     - uses: actions/upload-artifact@v4
       if: always()
       with:
