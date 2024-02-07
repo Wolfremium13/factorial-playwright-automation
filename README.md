@@ -10,6 +10,8 @@ for your own automation projects.
   by using the cron job at 7 AM.
 - **Clock out**: The automation clock out of the user on the Factorial HR
   website by using the cron job at 15 PM.
+- **Fridays**: On Fridays, the automation clock out of the user on the Factorial
+  HR website by using the cron job at 11 AM.
 
 ## 🔧 Configuration
 
