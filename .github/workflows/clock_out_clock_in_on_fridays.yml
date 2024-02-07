@@ -21,7 +21,7 @@ jobs:
       env:
         FACTORIAL_PASSWORD: ${{ secrets.FACTORIAL_PASSWORD }}
         FACTORIAL_USER: ${{ secrets.FACTORIAL_USER }}
-      run: npx playwright test -g "@clockOutClockIn"
+      run: npx playwright test -g "@SplitClockIn"
     - uses: actions/upload-artifact@v4
       if: always()
       with:

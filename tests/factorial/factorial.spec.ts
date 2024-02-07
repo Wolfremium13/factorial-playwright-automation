@@ -17,7 +17,7 @@ test.describe("The Factorial page should", () => {
     await expect(LocatorHelpers.ClockInButton(factorialPage)).toBeVisible();
   });
 
-  test("clock out and clock in in order to split hours range @clockOutClockIn", async ({ page }) => {
+  test("clock out and clock in in order to split hours range @SplitClockIn", async ({ page }) => {
     const factorialPage = await SignIn(page);
     await expect(LocatorHelpers.ClockOutButton(factorialPage)).toBeVisible();
     await LocatorHelpers.ClockOutButton(factorialPage).click();
