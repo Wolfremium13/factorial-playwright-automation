@@ -1,4 +1,4 @@
-name: Clock Out Clock In on Fridays
+name: Factorial Clock Out Clock In on Fridays
 
 on:
   schedule:

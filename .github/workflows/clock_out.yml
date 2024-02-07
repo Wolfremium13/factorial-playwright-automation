@@ -1,4 +1,4 @@
-name: Clock Out
+name: Factorial Clock Out
 
 on:
   schedule:

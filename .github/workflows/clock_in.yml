@@ -1,4 +1,4 @@
-name: Clock In
+name: Factorial Clock In
 
 on:
   schedule:
