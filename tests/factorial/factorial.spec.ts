@@ -16,4 +16,13 @@ test.describe("The Factorial page should", () => {
     await LocatorHelpers.ClockOutButton(factorialPage).click();
     await expect(LocatorHelpers.ClockInButton(factorialPage)).toBeVisible();
   });
+
+  test("clock out and clock in in order to split hours range @clockOutClockIn", async ({ page }) => {
+    const factorialPage = await SignIn(page);
+    await expect(LocatorHelpers.ClockOutButton(factorialPage)).toBeVisible();
+    await LocatorHelpers.ClockOutButton(factorialPage).click();
+    await expect(LocatorHelpers.ClockInButton(factorialPage)).toBeVisible();
+    await LocatorHelpers.ClockInButton(factorialPage).click();
+    await expect(LocatorHelpers.ClockOutButton(factorialPage)).toBeVisible();
+  });
 });
