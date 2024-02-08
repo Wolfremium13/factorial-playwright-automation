@@ -14,6 +14,8 @@ test.describe("The Factorial page should", () => {
     const factorialPage = await SignIn(page);
     await expect(LocatorHelpers.ClockOutButton(factorialPage)).toBeVisible();
     await LocatorHelpers.ClockOutButton(factorialPage).click();
+    await expect(LocatorHelpers.ConfirmEstimationButton(factorialPage)).toBeVisible();
+    await LocatorHelpers.ConfirmEstimationButton(factorialPage).click();
     await expect(LocatorHelpers.ClockInButton(factorialPage)).toBeVisible();
   });
 

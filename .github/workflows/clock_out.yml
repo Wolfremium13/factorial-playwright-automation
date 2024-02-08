@@ -2,7 +2,7 @@ name: Factorial Clock Out
 
 on:
   schedule:
-    - cron: '0 15 * * 1-5' # Ejecuta a las 15 PM UTC de lunes a viernes
+    - cron: '0 16 * * 1-5' # Ejecuta a las 15 PM UTC de lunes a viernes
 
 jobs:
   test:
