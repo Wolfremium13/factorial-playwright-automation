@@ -39,7 +39,7 @@ cp .env.example .env
 ```
 
 Those variables should be configured on your repository secrets to if you are
-using GitHub Actions.
+using GitHub Actions. Remember to update your project.
 
 ## 🚀 Running the tests
 
