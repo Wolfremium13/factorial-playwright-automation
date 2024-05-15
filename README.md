@@ -52,4 +52,4 @@ npx playwright test
 ## 🔀 GitHub Actions
 
 The project has a GitHub Actions workflow that runs the tests on every push to
-the `main` branch.
+the `main` branch. 
