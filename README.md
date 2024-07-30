@@ -43,7 +43,7 @@ using GitHub Actions. Remember to update your project.
 
 ## 🚀 Running the tests
 
-To run the tests, you can use the following command:
+To run the tests, you can use the following command: 
 
 ```bash
 npx playwright test
